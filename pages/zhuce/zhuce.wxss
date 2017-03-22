@@ -1,0 +1,112 @@
+
+
+
+.flex-wrp{
+    display: flex;
+    flex-direction: row;
+}
+.flex-item{
+    flex: 4;
+    margin-left: 63rpx;
+     height: 100%;
+}
+.flex-item-button{
+    flex: 2;
+    text-align: center;
+    background-color: mediumseagreen;
+    display: flex;
+    align-items:center;
+    color:#fff;
+    border-radius:2px;
+    height:60rpx;
+    line-height:60rpx;
+    margin:15rpx 0;
+    font-size:24rpx;
+    padding-left:60rpx;
+   letter-spacing:2rpx;
+
+
+}
+.phoneNO{
+        border-bottom: 1px solid #D9D9D9;
+            height: 45px;
+    position: relative;
+
+}
+
+.linecenter{
+     display: flex;
+     align-items:center;
+     height: 100%;
+     padding:0 30rpx;
+}
+.radio-group {
+      display: flex;
+    align-items:center;
+}
+.notempty{
+    margin-left: 63rpx;
+   
+   
+}
+.ma{
+   
+    background-position: -310px -29px;
+       
+    width: 20px;
+    height: 24px;
+   
+}
+.li{
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    margin-left: 10rpx;
+     display: block;
+       /*background: url() no-repeat center center;*/
+}
+
+
+
+.phone{
+
+    width: 40rpx;
+    height: 40rpx;
+ 
+}
+
+.name{
+    background-position: -279px -30px;
+        width: 20px;
+    height: 20px;
+}
+.icon{
+        background-position: -373px -33px;
+            width: 20px;
+    height: 20px;
+}
+.zhuce{
+
+ 
+	background-color: #ff4d4d;
+    color: white;
+	font-size: 40rpx;
+	line-height: 200%;
+	text-align: center;
+    	width: 90%;
+	margin:20rpx auto;
+}
+.loginOperation{
+    margin:30rpx;
+}
+.radio{
+    margin-right:30rpx;
+    position:relative;
+    width:130rpx;
+}
+.radio text{
+    position:absolute;
+    top:4rpx;
+    right:0;
+
+}

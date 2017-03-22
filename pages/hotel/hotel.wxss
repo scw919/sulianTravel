@@ -1,0 +1,105 @@
+.main{
+    display: flex;
+    font-size: 30rpx;
+flex-direction: column;
+
+}
+
+
+.cell {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+
+	padding-top: 10px;
+  padding-bottom: 10px;
+    position: relative;
+    border-bottom:1px solid #f0f0f0;
+
+
+  
+}
+
+
+.left {
+	width: 200rpx;
+	height: 200rpx;
+    margin:0 10rpx 0 15rpx;
+	padding: 5rpx;
+	box-sizing: border-box;
+}
+.left image{
+    width: 100%;
+    height: 100%;
+
+}
+
+.cell-text text{
+
+  display: block;
+}
+.text-nm{
+    margin-top: 10rpx;
+    font-weight: 10px;
+    font-size:23rpx;
+    }
+.text-desc{
+    font-size:19rpx;
+    margin:5rpx 0;
+    color:#000;
+    }
+.text-sc{
+    margin:8rpx 0;
+    font-size:20rpx;
+    color:crimson;
+}
+.text-address{
+    width:350rpx;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    /*margin-top: 10rpx;*/
+    font-size: 20rpx;
+    color:dimgray;
+    height: 30rpx;
+
+}
+/*.text-city{
+  margin-top: 30rpx;
+    font-size: 13px;
+    color:dimgray;
+}*/
+.text-jia{
+    font-size: 20rpx;
+    color:dimgray;
+    height: 30rpx;
+}
+.showmore{
+    text-align: center;
+    margin: 30rpx;
+    color: #000;
+
+}
+.buyticket{
+    position: absolute;
+    right: 20px;
+    margin-top: 20px ;
+    color:black;
+}
+.tobook{
+    position:absolute;
+    right:40rpx;
+    bottom:30rpx;
+    padding:8rpx;
+    margin:5rpx;
+    background-color:#f00;
+    color:#fff;
+    border-radius:5rpx;
+    font-size:22rpx;
+}
+.bigsize{
+    font-size: 38rpx;
+    font-weight: bold;
+    padding-left: 5rpx;
+    padding-right: 5rpx;
+}

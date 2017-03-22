@@ -1,0 +1,37 @@
+
+
+   <view class="loginOperation">
+                    <view class="ul">
+                        <view class="phoneNO">
+                            <view class="li"><image src="../../images/telphone.png" class="phone" /></view>
+                            <input  placeholder="请输入手机号" class="notempty linecenter" bindblur="getnum" />
+                        </view>
+                         
+                         <view class="flex-wrp phoneNO">
+                         <view class="li"><image src="../../images/message.png" class="phone"></image></view>
+                        <view class="flex-item">
+                               <input name="code" placeholder="短信验证码"   class="linecenter" bindblur="makesure"/>
+                      </view>
+            <view class="flex-item-button" bindtap="getVerifyCode"> {{ma}}
+</view>
+        </view>
+                        
+                        <view class="phoneNO">
+                            <view class="li"><image src="../../images/personal.png" class="phone"></image></view>
+                            <input type="text" placeholder="您的姓名" class="notempty linecenter" bindinput="myname" />
+                        </view>
+
+                        <radio-group class="radio-group phoneNO " bindchange="radioChange">
+  <label class="radio " wx:for="{{items}}" wx:key="item">
+    <radio value="{{item.name}}" checked="{{item.checked}}"/>
+    <text>{{item.value}}</text>
+  </label>
+</radio-group>
+                        <view class="phoneNO" style="border-bottom: 1px solid #D9D9D9;">
+                            <view  class="li"><image src="../../images/password.png" class="phone"></image></view >
+                            <input type="password" placeholder="6-20字母,数字"  class="notempty linecenter" bindblur="getpsw"  />
+                        </view>
+                     </view>
+                     <button plain="true"class="zhuce"  bindtap="zhuce" >立即注册</button>
+                       <!--<button plain="true"class="zhuce"  bindtap="zhuce" disabled="{{noworno}}">立即注册</button>-->
+     </view>                

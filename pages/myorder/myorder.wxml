@@ -1,0 +1,68 @@
+<view class="main">
+  <view class="loadin">
+    <block wx:for="{{menuarr}}" wx:key="item">
+      <view class="loadin-left {{currentMenuID==item.currentpage? 'selected':''}}" bindtap="bindchange" id="{{item.currentpage}}">
+        {{item.text}}
+      </view>
+    </block>
+  </view>
+  <swiper class="move-swiper" bindchange="swmove" current="{{pagenow}}">
+    <swiper-item class="right">
+      <view class="quick">
+        <view class="flex-wrp" style="flex-direction:row;">
+          <input placeholder="手机号" value="{{phone}}" bindblur="phoneDataChange" />
+        </view>
+        <view class="line"></view>
+        <view class="flex-wrp" style="flex-direction:row;">
+          <view class="flex-item" style="width:260px;">
+            <input name="code" placeholder="密码" password="true" value="{{code}}" class="ofo-button" bindblur="getpasd" />
+          </view>
+        </view>
+        <view class="line"></view>
+        <view class="bottom">
+          <view class="loadup" bindtap="loadin">登录</view>
+          <!--<view class="clearfix">
+            <view class="forget ">忘记密码？</view>
+          </view>-->
+         
+          <view class="tip"> 已经注册过的用户才可用动态码登录喔!!!</view>
+          <view class="send">还没有注册？点击下面即可注册哦</view>
+          <view class="zhuce" bindtap="zhuce">立即注册</view>
+          <view class="nice">温馨提示</view>
+          <view class="send">注册送200积分</view>
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item class="right">
+      <view class="quick">
+        <view class="flex-wrp" style="flex-direction:row;">
+          <view class="flex-item">
+            <input name="phone" placeholder="手机号" value="{{phone}}" bindblur="getnum" type="number" cursor-spacing="20" />
+          </view>
+        </view>
+        <view class="line"></view>
+        <view class="flex-wrp" style="flex-direction:row;">
+          <view class="flex-item" style="width:50%;">
+            <input name="code" placeholder="短信验证码" value="{{code}}" class="ofo-button" bindblur="makesure" />
+          </view>
+          <view class="flex-item-button" bindtap="getVerifyCode">
+            {{ma}}
+          </view>
+        </view>
+        <view class="line"></view>
+        <view class="bottom">
+          <view class="loadup" bindtap="loadup">登录</view>
+          <!--<view class="clearfix">
+            <view class="forget">忘记密码？</view>
+          </view>-->
+            <!--<view class="send">还没有注册</view>-->
+          <view class="tip"> 已经注册过的用户才可用动态码登录喔!!!</view>
+          <view class="send">还没有注册？点击下面即可注册哦</view>
+          <view class="zhuce" bindtap="zhuce">立即注册</view>
+          <view class="nice">温馨提示</view>
+          <view class="send">注册送200积分</view>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>

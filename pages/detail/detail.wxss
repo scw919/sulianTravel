@@ -1,0 +1,276 @@
+
+page{
+	background-color: rgb(238,238,238);
+}
+.top{
+	display: flex;
+	flex-direction:row;
+	justify-content: space-around;
+padding-top: 30rpx;
+	background-color: white;
+}
+.name{
+	font-size: 40rpx;
+	color: black;
+
+}
+.score{
+	color: red;
+	padding-left: 5rpx;
+	padding-right: 5rpx;
+
+}
+.command{
+	color: grey;
+	font-size: 30rpx;
+	margin-top: 54rpx;
+	
+}
+.top-left{
+	width: 80%;
+}
+.top-rigth{
+	float: right;
+	
+	width: 120rpx;
+	height: 120rpx;
+
+	padding: 5rpx;
+	box-sizing: border-box;
+  margin-left: 10rpx;
+
+}
+.top-rigth image{
+	height: 100%;
+	width: 100%;
+}
+.arrow{
+	height: 66rpx;
+	width: 40rpx;
+	display: flex;
+	float: right;
+
+}
+.arrow image{
+	height: 100%;
+	width: 100%;
+}
+
+/*表格*/
+.item{
+    display: flex;
+    flex-direction: row;
+    padding: 10px ;
+    background: white;
+    border-bottom: 0.5px solid lightgrey;
+
+	margin-top: 20rpx;
+}
+.item1{
+display: flex;
+    flex-direction: row;
+    padding: 10px ;
+    background: white;
+    border-bottom: 0.5px solid lightgrey;
+	justify-content: space-around;
+	text-align: center;
+
+}
+
+
+
+.item1 .four{
+  
+  display: flex;
+  flex-direction: row;
+
+ 
+}
+
+
+.four view{
+	height: 30rpx;
+	width: 30rpx;
+
+}
+.four view image{
+	width: 100%;
+	height: 100%;
+
+}
+
+
+
+
+
+/*图标*/
+.item .icon{
+    width: 26px;
+    height: 26px;
+   
+}
+/*箭头*/
+ .map{
+   color: red;
+}
+
+.address{
+	flex: 1;
+	height: 26px;
+	line-height: 26px;
+}
+.last{
+
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  background-color:orange;
+}
+/*图标*/
+.item .icon{
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+}
+
+/*文字*/
+.item label{
+    margin: 5px 0 0 10px; 
+    font-size: 15px;
+
+    /*撑开label两边部分的距离*/
+    flex: 1;
+
+    /*垂直居中*/
+    margin: auto; 
+}
+/*箭头*/
+.item .arrow{
+     width: 8px;
+    height: 9px;
+    margin:5px 0 0 5px;
+}
+.time{
+	color: red;
+
+}
+.night{
+	padding-left: 4rpx;
+
+}
+
+
+
+.cell {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+
+	padding-top: 10px;
+  padding-bottom: 10px;
+    position: relative;
+    border-bottom:2px solid #f0f0f0;
+background-color: white;
+
+  
+}
+
+
+.left {
+	width: 200rpx;
+	height: 200rpx;
+
+	padding: 5rpx;
+	box-sizing: border-box;
+  margin-right: 10rpx;
+}
+.left image{
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.cell-text{
+     padding:60rpx 30rpx;
+}
+
+
+
+.buyticket{
+    position: absolute;
+    right: 20px;
+    margin-top: 20px ;
+
+    
+  padding: 10rpx 15rpx;
+ 
+  color:black;
+
+}
+.bigsize{
+    font-size: 50rpx;
+    font-weight: bold;
+    padding-left: 5rpx;
+    padding-right: 5rpx;
+}
+.bed{
+display: flex;
+flex-direction: column;
+padding: 20rpx;
+
+
+
+}
+.cell-top{
+	display: flex;
+	
+
+}
+.menshi{
+flex: 1;
+text-align: center;
+margin-top:100rpx;
+}
+.yuding{
+
+background-color:#ff4d4d;
+color: white;
+/*color: write;*/
+padding:10rpx;
+height: 60rpx;
+text-align: center;
+line-height: 60rpx;
+width: 100rpx;
+float: right; 
+border-radius:2px;
+}
+.del{
+text-decoration: line-through;
+}
+.red{
+	color: red;
+	font-size: 56rpx;
+	font-weight: bold;
+}
+.red1{
+	color: red;
+	font-size: 40rpx;
+	margin-top: 18rpx;
+	font-weight: bold;
+}
+.cell-bottom{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color:skyblue;
+
+	margin-top: 40rpx;
+
+}
+.cell-bottom-four{
+
+	display: flex;
+	flex-direction: column;
+	padding-top: 50rpx;
+	padding-bottom: 50rpx;
+}

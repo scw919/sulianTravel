@@ -1,0 +1,39 @@
+.weui-form-preview{
+  padding:30px;
+  border:1px solid #ccc;
+
+}
+.weui-form-preview .weui-form-preview__hd{
+  margin:20rpx 0;
+}
+.weui-form-preview .weui-form-preview__bd{
+  margin:20rpx 0;
+}
+.weui-form-preview__item .weui-form-preview__label{
+  margin:20rpx 0;
+}
+.weui-form-preview__bd .weui-form-preview__label{
+  margin:20rpx 0;
+}
+.weui-form-preview__value{
+  margin:20rpx 0;
+}
+.newest{
+  font-size:30rpx;
+}
+.cancel{
+  width:200rpx;
+  background-color:lightgreen!important;
+  font-size:24rpx;
+  margin:30rpx 0;
+
+}
+.ass{
+  display:flex;
+}
+.ass1{
+  flex:1;
+}
+.ass2{
+  flex:3;
+}

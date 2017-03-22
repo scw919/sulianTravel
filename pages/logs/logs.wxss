@@ -1,0 +1,186 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+
+}
+.container{
+  height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+ 
+ background-color: rgb(245, 246, 246);
+}
+
+/*//中心区域*/
+.main-content{
+  margin-top: 30rpx;
+  height: 80%;
+  width: 80%;
+  text-align: center;
+background-color: rgb(255, 255, 255);
+}
+.main-content .switchtitle{
+  color:#f00;
+  font-size:32rpx;
+  margin:30rpx 0;
+
+}
+ .height{
+  line-height: 500%;
+
+ }
+.near-hotel{
+  height: 20%;
+     border-bottom: 1px solid gainsboro;
+   
+ 
+}
+.near-hotel text,.region text{
+  padding-left: 30rpx;
+  font-size:32rpx;
+  color:#00cc78;
+
+}
+.address{
+  height: 20%;
+  border-bottom: 1px solid gainsboro;
+  display: flex;
+  flex-direction: row;
+  /*border-top:1px solid gainsboro;*/
+}
+.add-left{
+ flex:7;
+padding-top:6%;
+line-height:130%;
+font-size:32rpx;
+justify-content:center;
+margin:50rpx 0;
+
+}
+.add-left .gpsword{
+  font-size:32rpx;
+}
+.add-left .place{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  font-size:23rpx;
+  padding-left:10%;
+}
+
+.gps{
+  flex:1;
+justify-content:center;
+margin-top:80rpx;
+margin-left:30rpx;
+
+
+
+}
+.location{
+  flex:1;
+  height:20px;
+  width:20px;
+  justify-content:center;
+}
+.time{
+   height:80px;
+   border-bottom: 1px solid gainsboro;
+   font-size:32rpx;
+   display:flex;
+}
+.time text{
+  line-height: 100%;
+  padding:5rpx;
+}
+.live-time{
+  height:80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex:7;
+   /*border-bottom: 1px solid gainsboro;
+   margin:0 10%;*/
+
+}
+
+.live-time .reduce,.live-time .plus{
+  margin: auto 0;
+  line-height: 70rpx;
+  height: 70rpx;
+  width:70rpx;
+  border-radius: 70rpx;
+    border: 1px solid black;
+ 
+  
+}
+
+.middle{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size:32rpx;
+  margin:0 25rpx;
+}
+.middle .middle-day{
+  margin-top:60rpx;
+
+}
+.middle .middle-day,.middle .middle-night{
+line-height: 150%;
+
+}
+.middle .middle-night{
+  margin-top:20rpx; 
+}
+.region{
+    height: 20%;
+  color: gray;
+ 
+  line-height: 350%;
+ 
+  
+}
+.yuding{
+  background-color:#ff4d4d;
+  font-weight: bold;
+	width: 80%;
+  margin: 0 auto;
+	font-size: 40rpx;
+	line-height: 200%;
+	text-align: center;
+	
+color: papayawhip;
+margin-bottom: 60rpx;
+}
+.here{
+  display:block;
+  margin:20rpx;
+  margin-top:20rpx;
+  font-size:30rpx;
+}
+.dateBook{
+  flex:7;
+}
+.goroom{
+   justify-content:center;
+   flex:1;
+   margin-left:30rpx;
+
+
+}
+.endtime{
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+   border-bottom: 1px solid gainsboro;
+   font-size:32rpx;
+
+}
+.end{
+display:inline-block;
+margin:60rpx 0;
+}

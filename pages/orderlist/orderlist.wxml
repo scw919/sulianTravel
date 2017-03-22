@@ -1,0 +1,33 @@
+<view class="weui-form-preview" wx:for="{{array}}" wx:key="item">
+  <view class="weui-form-preview__hd">
+    <view class="weui-form-preview__item">
+      <view class="weui-form-preview__label">
+        {{item.estateName}}
+        <small class="smalls">{{item.typeName}}</small> 
+      </view>
+    </view>
+  </view>
+  <view class="weui-form-preview__hd">
+    <view class="weui-form-preview__item">
+      <view class="weui-form-preview__label add">{{item.adate}}入住 {{item.ddate}}离店</view>
+      <view class="weui-form-preview__value">共{{item.leftDay }}天 {{item.typeNum}}间</view>
+    </view>
+  </view>
+  <view class="weui-form-preview__hd">
+    <view class="weui-form-preview__item">
+      <view class="weui-form-preview__label add">房间号</view>
+        <view>{{roomarrList}}</view>
+    </view>
+  </view>
+  <view class="weui-form-preview__bd">
+    <view class="weui-form-preview__item">
+      <view class="weui-form-preview__label">当前订单金额： ¥ {{item.total}}
+      </view>
+    </view>
+  </view>
+  <view class="weui-form-preview__ft" id="currentOrder" bindtap="cancelCurrOrder">
+    <navigator class="weui-form-preview__btn weui-form-preview__btn_default" hover-class="weui-form-preview__btn_active">入住人:{{name}} {{item.quxiao?item.quxiao:really}}</navigator>
+    <navigator class="weui-form-preview__btn weui-form-preview__btn_primary" hover-class="weui-form-preview__btn_active">入住人电话:{{item.gstMobile}}</navigator>
+  </view>
+ 
+</view>

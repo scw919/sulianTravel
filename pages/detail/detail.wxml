@@ -1,0 +1,94 @@
+<view class="main">
+  <view class="top">
+    <view class="top-left">
+      <view class="name">{{bedname}}
+        <text class="score">4.4</text>分</view>
+      <view class="arrow clearfix">
+        <image src="../../images/{{imgindex}}.png" mode="scaleToFill" />
+
+        <!--<image src="../../images/0106arrow3x.png" mode="scaleToFill" />-->
+      </view>
+      <view class="command">10人评论</view>
+    </view>
+    <view class="top-rigth">
+      <image src="../../images/1.jpg" alt="" mode="scaleToFill" />
+    </view>
+  </view>
+  <view class="item">
+    <image class="icon" src="../../images/location1.png"></image>
+    <label class="address">五道口一号</label>
+    <view class="map">地图
+      <image class="arrow" src="../../images/0106arrow3x.png"></image>
+    </view>
+  </view>
+  <view class="item1">
+    <view class="four" bindtap="call">
+      <view class="img">
+        <image src="../../images/phone.png" alt="" />
+      </view>电话</view>
+    <view class="four" bindtap="hotline">
+      <view class="img1">
+        <image src="../../images/customer.png" alt="" />
+      </view>客服</view>
+    <view class="four" bindtap="favEvent">
+      <view class="img2">
+        <image src="../../images/{{fav}}.png" alt="" />
+      </view>收藏</view>
+    <view class="four" bindtap="share">
+      <view class="img3">
+        <image src="../../images/share.png" alt="" />
+      </view>分享</view>
+  </view>
+  <view class="item last">
+    <image class="icon" src="../../images/0226courseS.png"></image>
+    <label class="time">{{month}}月{{day}}日-{{twomonth}}月{{twoday}}日</label>
+    <label class="night">共{{daynight}}晚</label>
+    <image class="arrow" src="../../images/0106arrow3x.png"></image>
+  </view>
+  <block wx:for="{{movie}}" wx:key="item">
+    <view class="cell" bindtap="cellclick" data-id="{{index}}">
+      <view class="left">
+        <image src="../../images/{{index}}.jpg" mode="aspectFill"></image>
+      </view>
+      <view class="cell-text">
+        <view lass="text-nm">{{item.name}}</view>
+      </view>
+      <view class="buyticket">￥
+        <text class="bigsize">{{item.minprice?item.minprice:100}}</text>起</view>
+    </view>
+    <!--<view class="getinbed" wx:if="{{ineed[index]}}">
+      <view class="bed">
+        <view class="cell-top">
+
+          <view>金卡</view>
+          <view class="menshi">
+            <view>￥
+              <label class="del">{{item.minprice}}</label>(门市价)
+              <label class="red">￥{{item.minprice}}</label>
+            </view>
+          </view>
+          <view class="yuding" bindtap="yuding" data-id="{{item.minprice}}" data-name="{{item.name}}">预定</view>
+        </view>
+
+        <view class="cell-bottom">
+          <view class="cell-bottom-four">
+            <view>黄金卡</view>
+            <view class="red1">￥{{item.minprice}}</view>
+          </view>
+          <view class="cell-bottom-four">
+            <view>铂金卡</view>
+            <view class="red1">￥{{item.minprice}}</view>
+          </view>
+          <view class="cell-bottom-four">
+            <view>老人卡</view>
+            <view class="red1">￥{{item.minprice}}</view>
+          </view>
+          <view class="cell-bottom-four">
+            <view>学生卡</view>
+            <view class="red1">￥{{item.minprice}}</view>
+          </view>
+        </view>
+      </view>
+    </view>-->
+  </block>
+</view>

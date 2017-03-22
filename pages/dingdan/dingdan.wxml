@@ -1,0 +1,71 @@
+<view class="ul">
+  <view class="pad">
+    <view class="nice">{{name}}
+      <text>{{typename}}</text>
+    </view>
+    <view class="send1">入住{{month}}月{{day}}日 {{twomonth}}月{{twoday}}日离店 共{{daynight}}晚</view>
+  </view>
+  <view class="phoneNO" bindtap="showtap">
+    <view class="li">房号</view>
+    <image class="add" src="../../images/time@2x.png" />
+    <view class="rrr"> {{choseArr}} </view>
+  </view>
+  <view>
+    <modal title="请选择房间号" hidden="{{modalHidden}}" confirm-text="确定" cancel-text="取消" bindconfirm="modalBindaconfirm" bindcancel="modalBindcancel">
+      <view class="roomlist" data-id="roomListBox">
+        <block wx:for="{{roomArray}}" wx:key="item">
+          <view class="list {{item.roomNumber==0 ? 'select':'select1'}}" data-id="{{item.rmid}}" data-rno="{{item.rno}}" hover="true" bindtap="chosen">
+            {{item.rno}}
+          </view>
+        </block>
+      </view>
+    </modal>
+  </view>
+  <view class="phoneNO" bindtap="count">
+    <view class="li">总计</view>
+    <view class="num">{{room}}间</view>
+  </view>
+
+  <!--<input class="notempty linecenter" bindblur="getnum" type="number" value="{{room}}" disabled="true" />
+    <view class="dish-item-count" style="">
+      <view class="dish-item-tab">
+        <view hidden="{{room == 1}}" class="dish-item-count-minus" data-id="{{room}}" bindtap="minusCount">
+          <image class="image" src="../../images/countMinus.png" />
+        </view>
+      </view>
+      <view class="dish-item-count-text dish-item-tab">
+        <text hidden="{{room== 1}}">{{room}}</text>
+      </view>
+      <view class="dish-item-count-plus" data-id="{{room}}" bindtap="addCount">
+        <image class="image" src="../../images/countSelAdd.png" />
+      </view>
+
+    <!--</view>-->
+
+  <!--</view>-->
+  <view class="phoneNO">
+    <view class="li">姓名</view>
+    <input class="notempty linecenter" bindblur="getname" value="{{hehe}}" />
+  </view>
+  <view class="phoneNO">
+    <view class="li">手机号</view>
+    <input value="{{phonenum}}" class="notempty linecenter" bindblur="getnum" />
+  </view>
+  <view class="phoneNO">
+    <view class="li">备注</view>
+    <input value="{{note}}" class="notempty linecenter" bindblur="getnote" />
+  </view>
+  <view class="pad">
+    <view class="nice">温馨提示</view>
+    <view class="send">请与入住当日12:00后到酒店前台办理入住，如提前到店，视酒店空房情况安排</view>
+  </view>
+<view class="car_bot">
+  <view class="car_bot_wrap">
+    总价<span class="car_total_money">￥{{price*room*daynight}}</span> 
+    <span class="car_order_confirm" bindtap="toPay" data-total="{{price * room*daynight}}" data-note="{{note}}" data-name="{{hehe}}" data-room="{{room}}" data-tel="{{phonenum}}">下单</span> 
+  </view>
+  </view>
+</view>
+
+
+ 

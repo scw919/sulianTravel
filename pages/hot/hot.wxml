@@ -1,0 +1,49 @@
+<!--<view class="main" bindtap="detail">-->
+<view class="main">
+  <view class="top">
+    <image class="top-image" mode="scaleToFill" src="https://wxapi.hotapp.cn/proxy/?appkey=hotapp11377340&url=https://img3.doubanio.com/view/photo/photo/public/p2170489870.jpg"></image>
+    
+  </view>
+  <view class="search">
+    <input placeholder="搜索关键字" />
+    <image src="../../images/k5.png"></image>
+  </view>
+  <view class="welcome">
+    <view class="welcome-top1">看▪和别人不一样的风景</view>
+    <view class="welcome-bottom1">享▪和家里不一样的住宿</view>
+  </view>
+</view>
+<view class="hot">热门推荐</view>
+<navigator url="../detail/detail">
+  <view class="main" bindtap="detail">
+    <view class="top1">
+        <image class="top-image" mode="aspectFill" src="https://wxapi.hotapp.cn/proxy/?appkey=hotapp11377340&url=http://img.mp.itc.cn/upload/20160804/5e7b02d24eac4b9aa24dc88556d5c0bf_th.jpg"></image>
+    </view>
+    <view class="welcome1">
+        <view class="welcome-top">背景特设风景</view>
+        <view class="welcome-bottom">找个经典浪起来</view>
+    </view>
+    </view>
+</navigator>
+<navigator url="../detail/detail">
+  <view class="main" bindtap="detail">
+    <view class="top1">
+        <image class="top-image" mode="scaleToFill" src="http://ww1.sinaimg.cn/bmiddle/7bb03442ly1fbc37lqla1j20zk0qo4af.jpg"></image>
+    </view>
+    <view class="welcome1">
+        <view class="welcome-top">台北特色民宿</view>
+        <view class="welcome-bottom">繁华与幽静完美融合</view>
+    </view>
+  </view>
+  </navigator>
+<navigator url="../detail/detail">
+  <view class="main" bindtap="detail">
+    <view class="top1">
+        <image class="top-image" mode="scaleToFill" src="http://ww1.sinaimg.cn/bmiddle/006s2g2Jjw1fbg2d0yxqyj30dv07dgnh.jpg"></image>
+    </view>
+    <view class="welcome1">
+        <view class="welcome-top">最适合发呆的世外桃源</view>
+        <view class="welcome-bottom">寒楼的别样的风情</view>
+  </view>
+    </view>
+</navigator>

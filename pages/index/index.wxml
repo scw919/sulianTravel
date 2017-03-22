@@ -1,0 +1,67 @@
+
+<!--index.wxml-->
+<!--<image src="../../images/a3.png" mode="aspectFill" class="play-bg"></image>-->
+<view class="main">
+  <view class="main-content">
+    <!--<view class="actitle">预定酒店或民宿</view>-->
+    <view class="main-top">
+      <ul>
+        <li>
+          <view class="reverse">
+            <view class="reverse-btn xiang" bindtap="gethouse" data-id="1">
+               <view class="tu">
+                 <image class="xiang" src="../../images/xiang.png"></image>
+               </view>
+               <view class="words">
+                 <view class="one">乡村旅居</view>
+                 <view class="two">特色民宿/精品客栈</view>
+               </view>
+               <view class="arrow">
+                 <image src="../../images/go@2x.png"></image>
+               </view>
+            </view>
+          </view>
+        </li>
+        <li>
+          <view class="reverse">
+            <view class="reverse-btn cityhotel" bindtap="gethouse" data-id="2">
+               <view class="tu">
+                 <image class="citylogo"  src="../../images/city.png"></image>
+               </view>
+               <view class="words">
+                 <view class="one">城市旅居</view>
+                 <view class="three">特价酒店/优质公寓</view>
+               </view>
+               <view class="arrow">
+                 <image src="../../images/go2@2x.png"></image>
+               </view>
+            </view>
+          </view>
+        </li>
+      </ul>
+    </view>
+    <view class="logo">
+      <image src="../../images/logo.png"></image>
+    </view>
+  </view>
+    <view class="menu">
+      <ul>
+        <li bindtap="getcenter">
+          <view class="roll">
+            <view class="icon">
+              <image src="../../images/mine.png" class="alarmclock"></image>
+            </view>
+          </view>
+          <view class="txt">个人中心</view>
+        </li>
+        <li bindtap="myorder">
+          <view class="roll">
+            <view class="icon">
+              <image src="../../images/order.png" class="alarmclock"></image>
+            </view>
+          </view>
+          <view class="txt">订单列表</view>
+        </li>
+      </ul>
+    </view>
+</view>

@@ -1,0 +1,36 @@
+{
+  "pages":[
+  
+    "pages/index/index",
+     "pages/logs/logs",
+      "pages/mypen/mypen",
+      "pages/myorder/myorder",
+      "pages/orderlist/orderlist",
+      "pages/zhuce/zhuce",
+      "pages/mycenter/mycenter",
+      "pages/pao/pao",
+      "pages/hotel/hotel",
+      "pages/detailfor/detailfor",
+      "pages/detail/detail",
+      "pages/emerty/emerty",
+      "pages/news/news",
+      "pages/dingdan/dingdan",
+       "pages/queryOrder/queryOrder",
+     
+       "pages/success/success",
+       
+       "pages/thing/index",
+       "pages/switchcity/switchcity",
+       "pages/find/index",
+       "pages/hot/hot",
+       "pages/topay/topay"
+ 
+     
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "宿联中国",
+    "navigationBarTextStyle":"black"
+  }
+}

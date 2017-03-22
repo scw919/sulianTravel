@@ -1,0 +1,65 @@
+
+<!--index.wxml-->
+<image src="../../images/bg.png" mode="aspectFill" class="play-bg"></image>
+<view class="main">
+  <view class="main-top">
+    <view class="reverse">
+      <view class="reverse-btn" bindtap="gethouse" data-id="1">民宿旅居</view>
+    </view>
+    <view class="reverse">
+      <view class="reverse-btn" bindtap="gethouse" data-id="2">城市旅居</view>
+    </view>
+  </view>
+  <view class="line"></view>
+  <view class="menu">
+    <ul>
+      <li bindtap="getcenter">
+        <view class="roll">
+          <view class="icon">
+            <image src="../../images/person.png" class="alarmclock"></image>
+          </view>
+        </view>
+        <view class="txt">个人中心</view>
+      </li>
+      <li bindtap="myorder">
+        <view class="roll">
+          <view class="icon">
+            <image src="../../images/order.png" class="alarmclock"></image>
+          </view>
+        </view>
+        <view class="txt">订单列表</view>
+      </li>
+
+      <!--<navigator url="../hot/hot">
+        <li>
+          <view class="roll">
+            <view class="icon">
+              <image src="../../images/news.png" class="alarmclock"></image>
+            </view>
+          </view>
+          <view class="txt">发现宿联</view>
+        </li>
+      </navigator>-->
+
+      <!--<navigator url="">
+        <li>
+          <view class="roll">
+            <view class="icon">
+              <image src="../../images/lock.png" class="alarmclock"></image>
+            </view>
+          </view>
+          <view class="txt">一键开锁</view>
+        </li>
+      </navigator>-->
+
+      <!--<li>
+        <view class="roll" bindtap="getnearhotel">
+          <view class="icon">
+            <image src="../../images/hotel.png" class="alarmclock"></image>
+          </view>
+        </view>
+        <view class="txt">附近酒店</view>
+      </li>-->
+    </ul>
+  </view>
+</view>

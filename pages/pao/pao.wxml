@@ -1,0 +1,29 @@
+<!--// name:"234",
+    //   price:100,
+    //     day:0,
+    //   month:0,
+    //   twoday:0,
+    //   twomonth:0,
+    //   daynight:0,
+    //   room:1,
+    //   plus:"+",
+    //   hehe:"近平",
+    //   phonenum:"110"-->
+<view class="weui-form-preview" wx:for="{{array}}" wx:key="item" >
+  <view class="weui-form-preview__hd">
+    <view class="weui-form-preview__item">
+      <view class="weui-form-preview__label">{{item.name}}</view>
+      <view class="weui-form-preview__value_in-hd">¥ {{item.price}}</view>
+    </view>
+  </view>
+  <view class="weui-form-preview__bd"><!--//  <view class="weui-form-preview__item"  wx:key="">-->
+    <view class="weui-form-preview__label">{{item.adate}}入住 {{item.ddate}}离店</view>
+     <!--<view class="weui-form-preview__label">{{item.month}}月{{item.day}}日入住 {{item.twomonth}}月{{item.twoday}}日离店</view>-->
+    <view class="weui-form-preview__value">共{{daynight }}天   {{item.typeNum}}间</view><!--// </view>-->
+  </view>
+  <view class="weui-form-preview__ft" id="currentOrder"  bindtap="cancelCurrOrder">
+    <navigator class="weui-form-preview__btn weui-form-preview__btn_default" hover-class="weui-form-preview__btn_active">{{item.gstName}} {{item.quxiao?item.quxiao:really}}</navigator>
+    <navigator class="weui-form-preview__btn weui-form-preview__btn_primary" hover-class="weui-form-preview__btn_active">联系电话{{item.gstMobile}}</navigator>
+  </view>
+</view>
+ 

@@ -1,0 +1,28 @@
+<view class="main">
+  <block wx:for="{{movie}}" wx:key="item">
+    <navigator url="../detailfor/detailfor?id={{item.id}}&name={{item.name}}&desc={{item.desc}}&code={{item.code}}&city={{item.city}}&phone={{item.phone}}&longlati={{item.longlati}}&headImg={{item.imageList[0].picturePath}}">
+      <view class="cell" bindtap="bookHotel" data-bedname="{{item.name}}" data-price="{{item.price}}" data-img="{{index%4}}">
+        <view class="left">
+          <image src="{{item.imageList[0].picturePath ? item.imageList[0].picturePath : defaultImg}}" mode="aspectFill"></image>
+        </view>
+        <view class="cell-text">
+          <view class="text-nm">{{item.name}}</view>
+          <view class="text-desc">{{item.desc}}</view>
+          <view class="text-sc">{{item.code?item.code:5}}分</view>
+
+          <!--<view class="text-city">{{item.desc}}</view>-->
+          <text class="text-address">酒店地址：{{item.address}} </text>
+          <text class="text-jia">距离你{{item.distance/1000}}千米</text>
+          <!--<text class="text-jia">距离你{{Math.ceil(item.distance/1000)}}千米</text>-->
+          <text class="text-jia">热线电话：{{item.phone}}</text>
+        </view>
+        <view class="buyticket">￥
+          <text class="bigsize">{{item.minprice?item.minprice:100}}</text>起</view>
+        <view class="tobook">去预定</view>
+      </view>
+    </navigator>
+  </block>
+  <view class="showmore" bindtap="showmore" wx:if="{{morehidden}}">
+    加载更多
+  </view>
+</view>

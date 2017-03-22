@@ -1,0 +1,21 @@
+<view class="main">
+  <view class="pic">
+    <icon type="success" size="100" class="icon" />
+  </view>
+  <view class="bottom">
+    恭喜你，预订成功！
+    <view>
+      <label class="sum">订单总额:¥ {{total}}</label>。您可以点击：
+    </view>
+    <view class="pay">
+      <label class="now" bindtap="paymoney">立即支付</label>
+    </view>
+    <!--<view>{{time}}秒后自动取消</view>-->
+    <view class="box">
+      <view class="backhome" bindtap="backhome">回到主页面</view>
+    </view>
+    <view class="box">
+      <view class="backhome" bindtap="checkout">查看订单</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,48 @@
+<view class="contain">
+
+<scroll-view>
+
+<!--头部-->
+<view class="maintop">
+<view class="back"><image src="../../images/basket.jpg" class="bg"></image></view>
+<view class="headerView">
+ <image class="picture" src="{{userInfo.avatarUrl}}"></image>
+ <label class="name">{{userInfo.nickName}}</label>
+ </view>
+</view>
+
+ 
+    <view class="item" bindtap="findout" data-id="{{item.text}}" data-index="{{index}}">
+    <image class="icon" src="../../images/my_order@2x.png"></image>
+    <label>我的当前订单</label>
+      <image class="arrow" src="../../images/0106arrow3x.png"></image>
+
+    </view>
+
+<!--表格-->
+ <!--<block wx:for-items="{{items}}" wx:key="item.id">   
+<view class="item" bindtap="findout" data-id="{{item.text}}" data-index="{{index}}">
+ <image class="icon" src="{{item.icon}}"></image>
+ <label>{{item.text}}</label>
+  <image class="arrow" src="../../images/0106arrow3x.png"></image>
+
+</view>
+ </block>-->
+<!--<view class="item last" bindtap="clear">
+ <image class="icon" src="../../images/0225msgS.png"></image>
+ <label>清理缓存</label>
+  <image class="arrow" src="../../images/0106arrow3x.png"></image>
+</view>
+<view class="item last">
+ <image class="icon" src="../../images/0226courseS.png"></image>
+ <label>一键退房</label>
+  <image class="arrow" src="../../images/0106arrow3x.png"></image>
+</view>-->
+
+
+<view class="loadup" bindtap="loadup">退出登录</view>
+
+
+</scroll-view>
+
+</view>

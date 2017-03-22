@@ -1,0 +1,309 @@
+
+page{
+	background-color: rgb(238,238,238);
+}
+.top{
+	display: flex;
+	flex-direction:row;
+	justify-content: space-around;
+	background-color: white;
+	padding:30rpx;
+
+}
+.name{
+	font-size: 40rpx;
+	color: black;
+
+}
+.descaa{
+	font-size:26rpx;
+	margin-top:10rpx;
+	}
+.score{
+	color: red;
+	padding-left: 5rpx;
+	padding-right: 5rpx;
+
+}
+.command{
+	color: grey;
+	font-size: 30rpx;
+	margin-top: 54rpx;
+	
+}
+.top-left{
+	width: 80%;
+}
+.top-rigth{
+	float: right;
+	
+	width: 120rpx;
+	height: 120rpx;
+
+	padding: 5rpx;
+	box-sizing: border-box;
+  margin-left: 10rpx;
+
+}
+.top-rigth image{
+	height: 100%;
+	width: 100%;
+}
+.arrow{
+	height: 66rpx;
+	width: 40rpx;
+	display: flex;
+	float: right;
+
+}
+.arrow image{
+	height: 100%;
+	width: 100%;
+}
+
+/*表格*/
+.item{
+    display: flex;
+    flex-direction: row;
+    padding: 10px ;
+    background: white;
+    border-bottom: 0.5px solid lightgrey;
+
+	margin-top: 20rpx;
+}
+.item1{
+display: flex;
+    flex-direction: row;
+    padding: 10px ;
+    background: white;
+    border-bottom: 0.5px solid lightgrey;
+	justify-content: space-around;
+	text-align: center;
+
+}
+
+
+
+.item1 .four{
+  
+  display: flex;
+  flex-direction: row;
+
+ 
+}
+
+
+.four view{
+	height: 30rpx;
+	width: 30rpx;
+    padding-right:10px;
+
+}
+.four view image{
+	width: 100%;
+	height: 100%;
+
+}
+
+
+
+
+
+/*图标*/
+.item .icon{
+    width: 26px;
+    height: 26px;
+   
+}
+/*箭头*/
+ .map{
+   color: red;
+}
+
+.address{
+	flex: 1;
+	/*height: 26px;
+	line-height: 26px;*/
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	position:absolute;
+	/*top:19%;
+	left:12%;*/
+	left:60rpx;
+
+
+}
+.last{
+
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  background-color:orange;
+}
+/*图标*/
+.item .icon{
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+}
+
+/*文字*/
+.item label{
+    margin: 5px 0 0 10px; 
+    font-size: 15px;
+
+    /*撑开label两边部分的距离*/
+    flex: 1;
+
+    /*垂直居中*/
+
+ 
+}
+/*箭头*/
+.item .arrow{
+     width: 8px;
+    height: 9px;
+    margin:5px 0 0 5px;
+}
+.time{
+	color: red;
+
+}
+.night{
+	padding-left: 4rpx;
+
+}
+
+
+
+.cell {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+
+	padding-top: 10px;
+  padding-bottom: 10px;
+    position: relative;
+    border-bottom:2px solid #f0f0f0;
+background-color: white;
+
+  
+}
+
+
+.left {
+	width: 200rpx;
+	height: 200rpx;
+    margin-left:20rpx;
+
+	padding: 5rpx;
+	box-sizing: border-box;
+  margin-right: 10rpx;
+}
+.left image{
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.cell-text{
+     padding:60rpx 0;
+	 font-size:30rpx;
+	 width:330rpx;
+	 text-overflow:ellipsis;
+	 overflow:hidden;
+	 white-space:nowrap;
+
+}
+
+
+
+.buyticket{
+    position: absolute;
+    right: 20px;
+    margin-top: 20px ;
+	font-size:30rpx;
+  	padding: 10rpx 0;
+	color:black;
+}
+.bigsize{
+    font-size: 40rpx;
+    font-weight: bold;
+    padding-left: 0;
+    padding-right: 5rpx;
+	color:#f00;
+
+}
+.bed{
+display: flex;
+flex-direction: column;
+padding: 20rpx;
+
+
+
+}
+.cell-top{
+	display: flex;
+	
+
+}
+.menshi{
+flex: 1;
+text-align: center;
+margin-top:100rpx;
+}
+.yuding{
+
+background-color:#ff4d4d;
+color: white;
+/*color: write;*/
+padding:10rpx;
+height: 40rpx;
+text-align: center;
+line-height: 40rpx;
+width: 100rpx;
+border-radius:2px;
+position:absolute;
+right:70rpx;
+bottom:35rpx;
+
+}
+.del{
+text-decoration: line-through;
+}
+.red{
+	color: red;
+	font-size: 56rpx;
+	font-weight: bold;
+}
+.red1{
+	color: red;
+	font-size: 40rpx;
+	margin-top: 18rpx;
+	font-weight: bold;
+}
+.cell-bottom{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color:skyblue;
+
+	margin-top: 40rpx;
+
+}
+.cell-bottom-four{
+
+	display: flex;
+	flex-direction: column;
+	padding-top: 50rpx;
+	padding-bottom: 50rpx;
+}
+.lside{
+	flex:6;
+}
+.map{
+	flex:1;
+	margin:10rpx 0;
+
+}

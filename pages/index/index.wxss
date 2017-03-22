@@ -1,0 +1,157 @@
+/**index.wxss**/
+.play-bg {
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	
+}
+.actitle{
+    text-align:center;
+    color:#f00;
+    margin:20rpx auto;
+    margin-top:40rpx;
+    font-size:43rpx;
+    font-weight:600;
+    letter-spacing:1px;
+}
+.main{
+display: flex;
+flex-direction: column;
+
+}
+.main .main-content{
+    background-color:#f2f2f2;
+}
+.main-top{
+ display: flex;
+ flex-direction: row;
+ margin-top:35rpx;
+
+}
+.main-top ul{
+    width:100%;
+}
+.reverse{
+   margin: 0 auto;
+   margin-top:20px;
+   width: 90%;
+   background: rgba(255,255,255,.25);
+   color: #fff;
+   position:relative;
+}
+.reverse-btn{
+    border-radius: 10px;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    padding:0 15px;
+    
+    height:150rpx;
+}
+.xiang{
+   background-color:#c32136;
+}
+.cityhotel{
+    background-color:#3a94fe;
+}
+.tu{
+    flex:2;
+    justify-content:center;
+    padding:5px 0;
+}
+.tu .xiang{
+    width:159rpx;
+    height:80rpx;
+    margin:35rpx 0;
+
+}
+.words{
+    margin:20rpx 0;
+    font-size:24rpx;
+    flex:3;
+}
+.words .one{
+    font-size:38rpx;
+    margin:15rpx 0 10rpx 0;
+}
+.words .two{
+    font-size:25rpx;
+    color:#f4a9b3;
+}
+.arrow{
+    flex:1;
+   justify-content:center; 
+}
+.arrow  image{
+    width:30rpx;
+    height:30rpx;
+    margin:60rpx 30rpx;
+}
+
+.roll{
+    margin: 0 auto;
+    display: block;
+    width: 50px;
+    height: 45px;
+    border-radius: 50px;
+}
+.menu{
+    position:fixed;
+    left:0;
+    bottom:0;
+    width:100%;
+    background-color:#ddd;
+}
+.menu > ul{
+    overflow:hidden;
+}
+.menu ul li{
+ float: left;
+ width:50%;
+text-align: center;
+margin-bottom:15rpx;
+
+}
+.menu ul li .txt{
+    color: #000;
+    font-size:22rpx;
+    /*margin:10px 0;*/
+   font-weight:600;
+}
+.icon{
+    margin:0 auto;
+        /*background: url(../../images/hotel_icon.png) no-repeat center center;*/
+    width: 35px;
+    height: 35px;
+    background-size: 500px 500px;
+    font-style: normal;
+    padding-top:10rpx;
+
+}
+.alarmclock{
+    height: 100%;
+    width: 100%;
+     
+}
+.logo{
+    margin:100px 0;
+    display:flex;
+    justify-content:center;
+
+}
+.logo image{
+    width:300rpx;
+    height:150rpx;
+}
+.citylogo{
+    width:89rpx;
+    height:113rpx;
+    margin:10rpx 40rpx;
+}
+.three{
+    color:#aed3fe;
+}
+

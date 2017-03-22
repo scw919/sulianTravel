@@ -1,0 +1,65 @@
+.main{
+   
+     background-color: lightgrey;
+     height: 100%;
+     width: 100%;
+
+  
+}
+
+.content{
+  text-align: center;
+
+
+}
+.date{
+    margin-top: 10rpx;
+    margin-bottom: 20rpx;
+
+}
+.all-day{
+    background-color: white;
+}
+
+.red{
+    color: red;
+}
+.past{
+    color:thistle;
+}
+.day{
+    display: flex;
+    flex-direction: row;
+
+   
+}
+
+.day view{
+    flex: 1;
+    
+      padding-top: 20rpx;
+  padding-bottom: 20rpx;
+
+  
+}
+.day-item{
+
+ width: 14.28%;
+     padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  float: left;
+
+}
+
+.today{
+    background-color: yellow;
+    font-size: 30rpx;
+
+}
+.today::after{
+    content: "入住";
+
+}
+.select{
+    border:1px solid #f00;
+}

@@ -1,0 +1,92 @@
+/**index.wxss**/
+.play-bg {
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	
+}
+.main{
+display: flex;
+flex-direction: column;
+
+}
+.main-top{
+ display: flex;
+   flex-direction: row;
+}
+.reverse{
+
+   margin: 0 auto;
+  
+  
+   margin-top: 50px;
+
+   width: 130px;
+    height: 130px;
+    border-radius: 100px;
+    background: rgba(255,255,255,.25);
+    color: #fff;
+    
+
+}
+.reverse-btn{
+     justify-content: space-between;
+    text-align: center;
+    line-height: 120px;
+    font-size: 20px;
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+    margin-top: 5px;
+    margin-left: 5px;
+    /*background-color: #ff4d4d;*/
+      background-color:tomato;
+
+}
+.line{
+    background: #C5A77E;
+    height: 1px;
+  margin-left: 25rpx;
+  margin-right: 25rpx;
+  margin-top: 80rpx;
+
+
+}
+.roll{
+        margin: 0 auto;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    border:1px solid  rgba(255,255,255,.35);
+}
+.menu ul li{
+ float: left;
+ width:50%;
+text-align: center;
+margin-top: 20px;
+}
+.menu ul li .txt{
+    color: #fff;
+    padding-top: 20rpx;
+}
+.icon{
+
+
+       margin: 17px auto;
+    /*background: url(../../images/hotel_icon.png) no-repeat center center;*/
+width: 25px;
+height: 25px;
+
+    background-size: 500px 500px;
+    font-style: normal;
+    
+}
+.alarmclock{
+    height: 100%;
+    width: 100%;
+     
+}

@@ -1,0 +1,52 @@
+
+<!--logs.wxml-->
+<view class="container log-list">
+  <view class="main-content">
+
+    <!--<view class="switchtitle">{{city}}的{{hotel}}</view>-->
+    <view class="address " bindtap="reverseloca">
+      <view class="gps">
+        <image class="location" src="../../images/sou.png"></image>
+      </view>
+      <view class="add-left">
+       
+        <view class="gpsword">当前位置 {{address}}</view>
+      
+      </view>
+    </view>
+    <view class="time height" bindtap="chooseDate">
+      <view class="goroom">
+        <image class="location atime" src="../../images/time@2x.png"></image>
+      </view>
+      <view class="dateBook">
+        <text>{{month}}月{{today}}日</text>
+        <text>周{{day}}入住</text>
+      </view>
+    </view>
+  
+    <view>
+     <view class="time height">
+      <view class="goroom">
+         
+      </view>
+       <view class="live-time">
+        <view class="reduce" bindtap="bindreduce" >-</view>
+        <view class="middle">
+          <text class="middle-night">住{{nighttime}}晚</text>
+        </view>
+        <view class="plus" bindtap="bindplus">+</view>
+      </view>
+    </view>
+    <view class="time height" bindtap="clickme">
+      <view class="goroom">
+         <image class="location atime" src="../../images/time@2x.png"></image>  
+      </view>
+      <view class="dateBook">
+         {{twomonth}}月{{twoday}}日 周{{tormmer}}退房
+      </view>
+    </view>
+    
+  </view>
+  </view>
+  <view class="yuding" bindtap="yuding">预定酒店</view>
+</view>
